@@ -8,7 +8,7 @@
 				</span>
 				<vue3-simple-typeahead :items="list" :placeholder="options.placeholder" @selectItem="selectItem" @onInput="onInput" @onBlur="onBlur" :minInputLength="options.minInputLength" />
 			</div>
-			<div class="column">
+			<div class="column column-40">
 				<pre><code>{{data}}</code></pre>
 			</div>
 		</div>

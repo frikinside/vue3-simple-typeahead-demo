@@ -20,7 +20,7 @@
 					"
 				/>
 			</div>
-			<div class="column">
+			<div class="column column-40">
 				<pre><code>{{data}}</code></pre>
 			</div>
 		</div>
