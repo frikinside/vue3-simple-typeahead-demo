@@ -17,7 +17,7 @@
 			<div class="badges">
 				<a href="https://www.npmjs.com/package/vue3-simple-typeahead"><img src="https://img.shields.io/npm/v/vue3-simple-typeahead.svg" alt="npm"/></a>
 				<a href="https://v3.vuejs.org/"><img src="https://img.shields.io/badge/vue-3.x-brightgreen.svg" alt="vue3"/></a>
-				<a href="https://www.npmjs.com/package/vue3-simple-typeahead?activeTab=dependencies"><img src="https://img.shields.io/david/frikinside/vue3-simple-typeahead" alt="no-dependecies"/></a>
+				<!-- <a href="https://www.npmjs.com/package/vue3-simple-typeahead?activeTab=dependencies"><img src="https://img.shields.io/david/frikinside/vue3-simple-typeahead" alt="no-dependecies"/></a> -->
 				<a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/npm/l/vue3-simple-typeahead" alt="License"/></a>
 				<a href="https://www.npmjs.com/package/vue3-simple-typeahead"><img src="https://img.shields.io/npm/dt/vue3-simple-typeahead.svg" alt="npm"/></a>
 				<a href="https://www.npmjs.com/package/vue3-simple-typeahead"><img src="https://img.shields.io/bundlephobia/min/vue3-simple-typeahead?color=brightgreen" alt="npm bundle size"/></a>
@@ -28,57 +28,60 @@
 		<form>
 			<demo-1></demo-1>
 			<demo-2></demo-2>
+			<demo-3></demo-3>
 		</form>
 	</section>
 </template>
 
 <script>
-import Demo1 from './components/Demo1.vue';
-import Demo2 from './components/Demo2.vue';
+	import Demo1 from './components/Demo1.vue';
+	import Demo2 from './components/Demo2.vue';
+	import Demo3 from './components/Demo3.vue';
 
-export default {
-	name: 'App',
-	components: {
-		Demo1,
-		Demo2,
-	},
-};
+	export default {
+		name: 'App',
+		components: {
+			Demo1,
+			Demo2,
+			Demo3,
+		},
+	};
 </script>
 
 <style>
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: #2c3e50;
-}
-#app .fork-in-github {
-	position: absolute;
-	right: 0;
-	z-index: 9;
-}
-#app header {
-	padding: 4rem 0 2rem 0;
-	margin-bottom: 4rem;
-	text-align: center;
-	background: #f4f5f6;
-	border: 0.1rem solid #d1d1d1;
-}
-#app header h2 {
-	margin-top: 20px;
-}
-#app header h2 img {
-	vertical-align: middle;
-}
-#app header .badges a {
-	vertical-align: text-top;
-}
-#app header .badges a + a {
-	margin-left: 5px;
-}
-#app .demo:not(:last-child) {
-	border-bottom: 0.1rem dashed #d1d1d1;
-	padding-bottom: 2rem;
-	margin-bottom: 4rem;
-}
+	#app {
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color: #2c3e50;
+	}
+	#app .fork-in-github {
+		position: absolute;
+		right: 0;
+		z-index: 9;
+	}
+	#app header {
+		padding: 4rem 0 2rem 0;
+		margin-bottom: 4rem;
+		text-align: center;
+		background: #f4f5f6;
+		border: 0.1rem solid #d1d1d1;
+	}
+	#app header h2 {
+		margin-top: 20px;
+	}
+	#app header h2 img {
+		vertical-align: middle;
+	}
+	#app header .badges a {
+		vertical-align: text-top;
+	}
+	#app header .badges a + a {
+		margin-left: 5px;
+	}
+	#app .demo:not(:last-child) {
+		border-bottom: 0.1rem dashed #d1d1d1;
+		padding-bottom: 2rem;
+		margin-bottom: 4rem;
+	}
 </style>
